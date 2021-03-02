@@ -12,7 +12,6 @@
 
             <form action="{{ route('login') }}" method="POST">
                 @csrf
-                @method('POST')
                 <div class="mb-4">
                     <label for="email" class="sr-only">email</label>
                     <input type="email" class="bg-gray-100 border-2 w-full p-4 rounded-lg @error('email') border-red-500 @enderror" name="email" id="email" placeholder="Your email" value="{{ old('email') }}">
@@ -38,7 +37,7 @@
                     </div>
                 </div>
                 <div>
-                    <button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Register</button>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-3 rounded font-medium w-full">Sign In</button>
                 </div>
             </form>
         </div>
